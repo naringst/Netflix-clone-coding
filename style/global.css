@@ -1,8 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #141414;
   color: #fff;
   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
     sans-serif;
+}
+
+body {
+  background-color: #141414;
+  width: 100%;
+  overflow-x: hidden;
 }
