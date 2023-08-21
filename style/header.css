@@ -11,10 +11,18 @@ header {
   color: #e5e5e5;
   padding: 0 58px;
   letter-spacing : 0 !important;
-  background : transparent;
-  transition : 
+  background : linear-gradient(#000 , transparent);
+
 }
 
+@media (max-width: 960px){
+  .header {
+  font-size :10px;
+}
+.primary-navigation {
+  opacity : 0;
+}
+}
 
 .main-logo {
   cursor: pointer;
