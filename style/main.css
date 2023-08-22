@@ -20,7 +20,8 @@ main h2 {
 
 .main-title img {
   position: absolute;
-  bottom: 300px;
+  width : 30%;
+  top : 140px;
   left: 50px;
 
 }
@@ -28,23 +29,25 @@ main h2 {
 .main-introduce {
   width: 450px;
   position: absolute;
-  bottom: 100px;
+  bottom: 10%;
   left: 50px;
-  bottom: 180px;
+  top: 380px;
   line-height: 1.4;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-weight: 400;
   word-break: keep-all;
 }
 
 .main-buttons {
   position: absolute;
-  bottom: 80px;
+  top: 510px;
   padding: 0px 50px;
 }
 
 
 #play , #detail {
+  font-size: 1.2rem;
+  font-weight: 400;
   height : 3rem;
   padding: auto 14px;
   margin-top: 10px;
@@ -69,8 +72,7 @@ main h2 {
   background-color: rgba(109, 109, 110, 0.7);
   margin-left: 10px;
   width: 10rem;
-  font-size: 20px;
-  font-weight: 400;
+
 }
 
 /* svg */
@@ -115,9 +117,8 @@ main h2 {
   margin: 20px 0px;
   width : 100%;
 
+
 }
-
-
 
 .top-10 {
   padding-bottom : 40px;
@@ -128,6 +129,7 @@ main h2 {
   color: white;
   background: transparent;
   gap : 20px;
+
 }
 
 
@@ -155,7 +157,8 @@ main h2 {
   display: flex;
   height: 150px;
   padding: 0 56px;
-  flex-wrap: nowrap;
+  white-space:nowrap;
+
 }
 
 
@@ -166,6 +169,7 @@ main h2 {
   display : grid;
   grid-template-columns : 1fr 1fr;
   border-radius : 3px;
+  
 }
 
 .content img { 
@@ -253,6 +257,7 @@ main h2 {
   position: relative;
   transform: translateX(0px) translateY(-30px) scale(1.7, 1.7);
   height : 300px;
+  overflow-y : visibe;
 
  
 
@@ -307,3 +312,61 @@ main h2 {
 
 
 
+
+
+@media screen and (min-width : 760px) and (max-width : 1440px) {
+  .main-buttons button {
+    width : 20px;
+}
+.top-10 {
+ padding-top : 280px;
+}
+
+}
+
+
+@media screen and (max-width : 759px)  {
+
+.top-10 {
+  padding-top : 500px;
+}
+
+
+.main-title > img {
+  width : 50%;
+  top : 200px;
+}
+
+
+.main-introduce {
+  font-size : 1rem;
+  width : 80vw;
+}
+
+.main-buttons {
+  display : flex;
+  align-items : center;
+}
+
+.main-buttons #play, #detail {
+  width : 62px;
+  height : 40px;
+  font-size : 12px;
+  line-height : 40px;
+}
+
+
+.main-buttons #play svg {
+  height : 14px;
+  padding : 0;
+  margin-top : 20px;
+  margin : 0;
+
+
+}
+
+.footer {
+  height : max-content;
+}
+
+  }
